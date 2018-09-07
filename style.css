@@ -1,0 +1,134 @@
+*{
+    font-family: 'Varela Round', sans-serif;
+}
+
+#container{
+    width: 60%;
+    margin: 0px auto;
+}
+
+#header{
+    width: 100%;
+    text-align: center;
+    
+}
+
+#title{
+    width:80%;
+    height: 41px;
+    
+}
+
+#date{
+    width: 80%;
+    height: 41px;
+}   
+
+input{
+    width: 90%;
+    font-size: 1.25rem;
+    padding: 7px;
+    border: none;
+
+}
+
+.input-container {
+   /* display: flex; both position and flex will work*/
+    width: 100%;
+    position: absolute;
+}
+
+.icon {
+    padding: 12px;
+    min-width: 16px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+}
+.inputBox{
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 0.41em 4.4px;
+    margin: 6px;
+}
+
+input:focus{
+    outline: none;
+}
+input#output{
+    width:40%;
+}
+#buttonContainer{
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+button{
+    background-color: #00d1b2;
+    border-color: transparent;
+    color: #fff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 11px;
+}
+
+.newTask{
+    margin: 10px;
+    border: 1px solid #ccc;
+    width: 81%;
+}
+#taskHeader{
+    
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#taskFooter{
+   height: 40px;
+    
+}
+
+#header h2{
+    width:80%;
+}
+#content{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 0px 0.5px #ccc; 
+    padding: 33px;
+}
+
+span{
+    font-weight: bold;
+}
+
+#content h2{
+    margin-top: -15px;
+}
+
+i{
+    padding: 12px;
+}
+
+#statusDiv{
+    float: left;
+}
+
+#viewDiv{
+    width:33%;
+    border-right: 1px solid #dbdbdb;
+    color:skyblue;
+    float: left;
+    margin-left: 68px;
+}
+
+#delDiv{
+    
+     color:rgb(255, 56, 96);
+    float: left;
+    margin-left: 67px;      
+}
