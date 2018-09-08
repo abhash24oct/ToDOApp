@@ -143,7 +143,8 @@ function displayTasks(){
       footer.appendChild(viewdiv);
 
       var delDiv =document.createElement("div");
-      delDiv.setAttribute("id","delDiv");
+      delDiv.setAttribute("class","delDiv");
+      delDiv.setAttribute("id",tasks[i]["id"]);
       var iElement3 = document.createElement("i");
       iElement3.setAttribute("class","fas fa-trash-alt");
       delDiv.appendChild(iElement3);
@@ -169,6 +170,16 @@ function displayTasks(){
           updateStatus(e.target.getAttribute("id"));
       });
     } 
+
+    var ___=document.getElementsByClassName("delDiv");
+
+    for(var k=0;k<___.length;k++){
+
+      ___[k].addEventListener("click",function(e){
+
+          deleteTask();
+      })
+    }
   }
    
 }
@@ -199,3 +210,21 @@ function updateStatus(id){
    }
    localStorage.setItem('tasks', JSON.stringify(tasks)); 
 } 
+
+
+function deleteTask(id){
+
+  //tasks.find(task => task.id ===id) will return the object conatining the id and the we are finding its index to 
+  //remove from array
+  var taskPos =tasks.indexOf(tasks.find(task => task.id ===id));
+
+  //Delete the item
+  tasks.splice(taskPos,1);
+
+  //Update the locat store
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+
+  //Display the tasks
+  displayTasks();
+
+}

@@ -119,16 +119,18 @@ i{
 }
 
 #viewDiv{
-    width:33%;
+    width:42%;
     border-right: 1px solid #dbdbdb;
     color:skyblue;
     float: left;
     margin-left: 68px;
+    cursor: pointer;
 }
 
-#delDiv{
+.delDiv{
     
-     color:rgb(255, 56, 96);
+    color:rgb(255, 56, 96);
     float: left;
-    margin-left: 67px;      
+    margin-left: 67px;  
+    cursor: pointer;    
 }
